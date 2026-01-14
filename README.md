@@ -7,3 +7,7 @@
 Запуск проекта
 
 ## npm run dev
+
+Ссылка на проект
+
+https://airlines.vercel.app/

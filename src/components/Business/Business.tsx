@@ -46,7 +46,7 @@ export const Business = () => {
 
   return (
     <ul
-      className="h-80 bg-[white] grid grid-cols-5 pt-14 pr-14 pb-14 pl-43 overflow-auto"
+      className="h-80 bg-[white] grid grid-cols-5 pt-14 pr-14 pb-14 pl-43 overflow-auto rounded-b-[15px] max-[1440px]:grid-cols-2 max-[822px]:hidden"
       onClick={stopEvent}
     >
       {itemsMenu.map((item) => (

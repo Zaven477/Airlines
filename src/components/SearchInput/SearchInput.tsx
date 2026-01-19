@@ -29,11 +29,11 @@ export const SearchInput = ({ ref }: SearchInputProps) => {
   }
 
   return (
-    <div className="flex items-center">
-      <div className="flex items-center relative" ref={ref}>
-        <CiSearch className="absolute pl-2" size={30} />
+    <div className="flex items-center w-full">
+      <div className="flex items-center relative w-full" ref={ref}>
+        <CiSearch className="absolute pl-5" size={40} />
         <input
-          className="border border-[#C0C0C0] h-10 w-250 rounded-[5px] outline-none pl-10"
+          className="border border-[#C0C0C0] h-10 w-full max-w-250 rounded-[5px] outline-none pl-12"
           type="text"
           name="search"
           placeholder="Поиск"
@@ -44,12 +44,12 @@ export const SearchInput = ({ ref }: SearchInputProps) => {
           <IoIosClose
             size={25}
             color="#808080"
-            className="absolute right-2 cursor-pointer"
+            className="absolute right-70 cursor-pointer max-[1440px]:right-5"
             onClick={closeDropdown}
           />
         )}
         {value.length > 0 && (
-          <div className="shadow-md bg-[white] w-250 max-h-160 absolute top-10 z-10 rounded-[5px] overflow-auto">
+          <div className="shadow-md bg-[white] w-full max-w-250 max-h-160 absolute top-10 z-10 rounded-[5px] overflow-auto">
             {names.length > 0 ? (
               <div className="p-5">
                 {names.map((list) => (

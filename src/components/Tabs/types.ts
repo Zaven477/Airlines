@@ -12,4 +12,5 @@ export interface TabsProps {
   tab: Tab;
   activeTab: TabId | null;
   setActiveTab: Dispatch<SetStateAction<TabId | null>>;
+  className?: Record<string, string>
 }

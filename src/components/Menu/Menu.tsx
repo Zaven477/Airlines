@@ -16,12 +16,11 @@ export const Menu = ({ idTab, showDropdown }: MenuProps) => {
               className="flex cursor-pointer"
               onClick={() => showDropdown(child.id)}
             >
-              <div className="w-full text-left">{child.title}</div>
+              <div className="w-full text-left">{child.title || child.name}</div>
               <div className="pr-2 text-[#808080]">
                 {child.children?.length}
               </div>
             </button>
-            <div className="mt-2">{child.name}</div>
             <>
               {child.children && idTab.includes(child.id) && (
                 <div className="absolute bg-[white] w-full top-0 left-0 h-full">
